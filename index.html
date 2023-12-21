@@ -29,7 +29,7 @@
         }
 
         .main {
-            width: 100%;
+            
             padding: 10px;
             text-align: center;
             height: 60px;
@@ -71,8 +71,28 @@
             height: 50px;
             padding: 1em;
             text-align: center;
-            width: 100%;
+            
         }
+       /* For screens up to 1200px wide */
+@media only screen and (max-width: 1200px) {
+  .projects {
+    grid-template-columns: 400px 400px;
+  }
+}
+
+/* For screens up to 800px wide */
+@media only screen and (max-width: 800px) {
+  .projects {
+    grid-template-columns: 370px 370px ;
+  }
+}
+
+/* For screens up to 400px wide (mobile) */
+@media only screen and (max-width: 600px) {
+  .projects {
+    grid-template-columns: 1fr;
+  }
+}
 
 
 /* CSS */
